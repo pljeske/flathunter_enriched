@@ -1,0 +1,5 @@
+rabbitmq:
+  host: rabbitmq
+  user: rabbitmq
+  password: rabbitmq
+  url: amqp://rabbitmq:rabbitmq@rabbitmq:5672/

@@ -1,0 +1,189 @@
+{
+    "angularDebugInfoEnabled": false,
+    "version": "3383",
+    "id": 134707439,
+    "viaInformation": {
+        "isQualifiedForRealtorBoxes": false,
+        "isEnrollWithRealtorEnabled": true
+    },
+    "commercializationType": "RENT",
+    "customerSegment": "",
+    "onTopProduct": "S",
+    "fraudUrl": "https://angebot-melden.immobilienscout24.de/report?realEstateId=134707439&publicationState=live",
+    "realEstateType": "APARTMENT_RENT",
+    "isResidential": true,
+    "world": "wohnen",
+    "preview": false,
+    "userLoggedIn": true,
+    "cwid": "001.1040708",
+    "realtorApiUrl": "/anbieter/api/branchenbuch/v1.2/realtor/001.1040708?clientId=expose",
+    "realtorExtendedApiUrl": "/anbieter/api/branchenbuch/v1.0/realtorextended/001.1040708?clientId=expose",
+    "returnUrl": "/expose/134707439?navigationServiceUrl=/Suche/controller/exposeNavigation/navigate.go?searchUrl%3D/Suche/shape/wohnung-mieten?shape%253DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%2526haspromotion%253Dfalse%2526numberofrooms%253D2.0-%2526price%253D-1000.0%2526livingspace%253D65.0-%2526exclusioncriteria%253Dswapflat%2526pricetype%253Drentpermonth%2526pagenumber%253D0%26exposeId%3D134707439&navigationHasPrev=false&navigationHasNext=false&navigationBarType=RESULT_LIST&searchId=43197450-ebd3-3ac0-9fb2-447930d01760",
+    "galleryData": {
+        "documents": [],
+        "floorPlanAvailable": false,
+        "virtualTours": [],
+        "imageCount": 7,
+        "totalItemsCount": 7
+    },
+    "shortlistEntry": {
+        "onShortlist": false,
+        "disabled": false
+    },
+    "screen9Url": "//csp-ssl.screen9.com/js/ps.js",
+    "ssoLoginUrl": "https://sso.immobilienscout24.de/sso/authenticate?appName=expose&sso_return=https://www.immobilienscout24.de/expose/134707439?referrer%3DRESULT_LIST_LISTING%26navigationServiceUrl%3D/Suche/controller/exposeNavigation/navigate.go?searchUrl%253D/Suche/shape/wohnung-mieten?shape%25253DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%252526haspromotion%25253Dfalse%252526numberofrooms%25253D2.0-%252526price%25253D-1000.0%252526livingspace%25253D65.0-%252526exclusioncriteria%25253Dswapflat%252526pricetype%25253Drentpermonth%252526pagenumber%25253D0%2526exposeId%253D134707439%26navigationBarType%3DRESULT_LIST%26searchId%3D43197450-ebd3-3ac0-9fb2-447930d01760%26searchType%3Ddrawn_area",
+    "nonceToken": "719e511280c34610be1432e77b1512026f4ebb52f76382aa209794547d65af5c5c406fff4ce16cc2",
+    "isDeactivated": false,
+    "isDesktop": true,
+    "isHistoricalListing": false,
+    "isBasicListFirstListing": false,
+    "isMobile": false,
+    "isNewHomeBuilder": false,
+    "isProjectUnit": false,
+    "showContactForm": true,
+    "contactData": {
+        "contactPerson": {
+            "salutationAndTitle": "",
+            "firstName": "Dominik",
+            "lastName": "Mau "
+        },
+        "contactButton": {
+            "hasEmail": true,
+            "disabled": false
+        },
+        "realtorInformation": {
+            "companyName": "Imoplan GmbH",
+            "privateOffer": false
+        }
+    },
+    "availableServicesData": {
+        "squareMeters": 92,
+        "zipCode": "10249",
+        "isGasHeating": true,
+        "creditCardService": true,
+        "creditWizardService": false
+    },
+    "consumerEntitlementsApi": "https://api.consumer-entitlements.immobilienscout24.de/active-entitlements/my",
+    "isContactIntentRealtorParticipation": false,
+    "restrictedListing": {
+        "restrictedEndTime": null,
+        "paywallBuyPlusListing": {
+            "enabled": false,
+            "isPaywallActive": false,
+            "premiumProfileRequired": false
+        },
+        "exclusivePresaleListing": {
+            "enabled": false
+        },
+        "exclusivePresaleBasicListing": {
+            "enabled": true
+        }
+    },
+    "features": {
+        "isFloorplanDocumentsInGalleryEnabled": false,
+        "googleMapPlacesTextSearch": false,
+        "virtualTourEnabled": true,
+        "visitorCountEnabled": false,
+        "shouldMakeSwitchVisible": false,
+        "sendAFriendDisabled": true,
+        "commissionSplitLoggedOut": true,
+        "profileRecommendationsV2ApiEnabled": true,
+        "enableWgWbs": false,
+        "loyaltyBadgesEnabled": true,
+        "paywallRedesignRent": true,
+        "basicListFirstNewDesign": false,
+        "newGalleryAdLoadingLogic": true
+    },
+    "travelTime": {
+        "city": "Berlin",
+        "zip": "10249",
+        "isFullAddress": true,
+        "streetAndStreetNumber": "Petersburger Str. 40"
+    },
+    "mediaAvailabilityModel": {
+        "productAvailable": true,
+        "productSpeed": "250 MBit/s",
+        "productUrl": "https://httpslink.com/speedcheck?ddu=https%3A%2F%2Fwww.telekom.de%2Ffestnetz%2Ftarife-und-optionen%2Finternet-dsl%3Fwt_mc%3Dda_fnmzbbxx_immo-internetverfuegbarkeitscheck%26address%3DeyJvcnQiOiJCZXJsaW4iLCJvcnRzdGVpbCI6IiIsInN0cmFzc2UiOiJQZXRlcnNidXJnZXIgU3RyLiIsImhhdXNudW1tZXIiOiI0MCIsImtsc2lkIjoxNDE2MzAzOCwiaGF1c251bW1lcnp1c2F0eiI6IiIsInBseiI6IjEwMjQ5In0%253D",
+        "speed": "250 MBit/s"
+    },
+    "quickCheckConfig": {
+        "quickCheckServiceUrl": "/reference-price/ajax/v3.0/latitude/52.52276149197612/longitude/13.449418323202202?realEstateType=0&objectCategory=118&price=10.27&livingArea=92&firstTimeUse=false",
+        "livingArea": 92,
+        "price": 10.27,
+        "location": "Friedrichshain (Friedrichshain)",
+        "showValuationLink": false,
+        "ssoLoginUrl": "https://sso.immobilienscout24.de/sso/authenticate?appName=expose&sso_return=https://www.immobilienscout24.de/expose/134707439?referrer%3DRESULT_LIST_LISTING%26navigationServiceUrl%3D/Suche/controller/exposeNavigation/navigate.go?searchUrl%253D/Suche/shape/wohnung-mieten?shape%25253DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%252526haspromotion%25253Dfalse%252526numberofrooms%25253D2.0-%252526price%25253D-1000.0%252526livingspace%25253D65.0-%252526exclusioncriteria%25253Dswapflat%252526pricetype%25253Drentpermonth%252526pagenumber%25253D0%2526exposeId%253D134707439%26navigationBarType%3DRESULT_LIST%26searchId%3D43197450-ebd3-3ac0-9fb2-447930d01760%26searchType%3Ddrawn_area",
+        "expose": {
+            "id": "134707439",
+            "zip": "10249",
+            "isFullAddress": true,
+            "realEstateType": "APARTMENT_RENT"
+        },
+        "translations": {
+            "quickcheck.preis.der.immobilie.im.vergleich.zu": "Preis der Immobilie im Vergleich zu",
+            "quickcheck.in": "Immobilien im Umkreis von",
+            "quickcheck.intro.text.not.enough.data": "Preis der Immobilie im Vergleich zu Immobilien in dieser Region.",
+            "quickcheck.diese.immobilie": "Diese Immobilie",
+            "quickcheck.angebotspreis": "Ø Angebotspreis",
+            "quickcheck.der.preisvergleich.fuer.diese.immobilie.ist.nur.fuer.eingeloggte.nutzer.sichtbar": "Der Preisvergleich für diese Immobilie ist nur für eingeloggte Nutzer sichtbar.",
+            "quickcheck.jetzt.einloggen": "Jetzt einloggen",
+            "quickcheck.fuer.diese.berechnung.liegen.zu.wenige.angebotspreise.vor": "Für diese Berechnung liegen zu wenige Angebotspreise vor.",
+            "quickcheck.die.preisspanne.definiert.sich.wie.folgt": "Die Preisspanne definiert sich wie folgt:",
+            "quickcheck.einbruchstatistik.einsehen": "Einbruchstatistik einsehen",
+            "quickcheck.informationen.zur.berechnung": "Informationen zur Berechnung",
+            "quickcheck.ausblenden": "Ausblenden",
+            "quickcheck.calculation.details.source": "Quelle",
+            "quickcheck.calculation.details.text": "Der Ø Angebotspreis dient als Orientierungswert und basiert auf den Attributen des Objektes. Als Datengrundlage für die Berechnung des Ø Angebotspreises werden Objekte aus dem aktuellen Datenbestand von ImmobilienScout24 verwendet. Dieser Angebotspreis wird mit Hilfe eines mathematischen Modells berechnet.\n\nDie Preisspanne basiert auf der Variabilität des jeweils betrachteten Gebietes, welches einen Umkreis von max. 10km und mindestens 10 Objekten aus dem Datenbestand von ImmobilienScout24 entspricht.",
+            "quickcheck.kostenfreie.immobilienbewertung.fuer.kaeuferplus.nutzer": "Kostenfreie Immobilienbewertung für KäuferPlus Nutzer"
+        }
+    },
+    "mapModel": {
+        "cmsPath": "/content/campaigns/is24/expose/umgebungskarte/wohnung_miete1/_jcr_content/par.html",
+        "adUnitPath": "/4467/IS24_DE/expose/banner_map",
+        "config": {
+            "mapContainerId": "google-map-container",
+            "quarterBounds": null,
+            "address": {
+                "streetAndHouseNumber": "Petersburger Str. 40",
+                "street": "Petersburger Str.",
+                "houseNumber": "40",
+                "zipCode": "10249",
+                "city": "Berlin",
+                "country": "Deutschland",
+                "region": "Berlin",
+                "quarter": "Friedrichshain (Friedrichshain)",
+                "international": false,
+                "backToExposeUrl": "/expose/134707439?navigationServiceUrl=/Suche/controller/exposeNavigation/navigate.go?searchUrl%3D/Suche/shape/wohnung-mieten?shape%253DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%2526haspromotion%253Dfalse%2526numberofrooms%253D2.0-%2526price%253D-1000.0%2526livingspace%253D65.0-%2526exclusioncriteria%253Dswapflat%2526pricetype%253Drentpermonth%2526pagenumber%253D0%26exposeId%3D134707439&navigationHasPrev=false&navigationHasNext=false&navigationBarType=RESULT_LIST&searchId=43197450-ebd3-3ac0-9fb2-447930d01760",
+                "addressForPopup": "Petersburger Str. 40"
+            },
+            "showFullAddress": true,
+            "apiParams": "libraries=places",
+            "width": "100%",
+            "containerHeight": "480px",
+            "controlsTop": true,
+            "apiCredentials": "key=AIzaSyA6n_iXXMMVP60thCKjJ_-tYnCodoWh7vQ",
+            "shapeServer": {
+                "url": "https://geoservices.immobilienscout24.de"
+            },
+            "cssThemeStyle": "cosma"
+        },
+        "feature": {
+            "errorBoxFeature": {
+                "outerClass": "content-wrapper-container page-wrapper page-wrapper--with-ads margin-top-none border-none",
+                "innerClass": "content-wrapper"
+            },
+            "noiseMap": {
+                "enabled": false,
+                "advertise": false
+            },
+            "internationalSearch": {}
+        },
+        "styledPOIs": [
+            "business",
+            "school",
+            "medical"
+        ]
+    },
+    "reportingEventStore": [],
+    "initializeAbTestPromise": {}
+}

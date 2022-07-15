@@ -1,0 +1,800 @@
+{
+    "gacApiKey": "49f5bf376feed3a0f0a52abb46c0dc90",
+    "gacBaseUrl": "",
+    "gacCountry": "DEU",
+    "navigationBarUrl": "/Suche/shape/wohnung-mieten?shape=aWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pricetype=rentpermonth",
+    "searchUrl": "/shape/wohnung-mieten?shape=aWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pricetype=rentpermonth",
+    "searchId": "43197450-ebd3-3ac0-9fb2-447930d01760",
+    "isMobile": false,
+    "queryModel": {
+        "query": {
+            "view": "IS24",
+            "radius": null,
+            "minRadius": null,
+            "travelTime": "NONE",
+            "realEstateTypes": [
+                "APARTMENT_RENT"
+            ],
+            "realEstateType": "APARTMENT_RENT",
+            "furnishing": null,
+            "flatShareSize": null,
+            "shortTermAccommodationType": null,
+            "centerOfSearchAddress": null,
+            "locationSelectionType": "SHAPE",
+            "smokingAllowed": null,
+            "flatMateGender": null,
+            "assistedLivingCommercializationType": null,
+            "apiField1": null,
+            "apiField2": null,
+            "apiField3": null,
+            "fullTextQuery": null,
+            "companyWideCustomerId": null,
+            "numberOfPersons": null,
+            "ownFunds": null,
+            "vendorGroup": null,
+            "minimumInternetSpeed": null,
+            "beginRent": null,
+            "rentalPeriod": null,
+            "lastModifiedAfter": null,
+            "rentDurationInMonths": null,
+            "wohnberechtigungsscheinNeeded": false,
+            "hasRented": null,
+            "trailLivingPossible": null,
+            "withFurniture": null,
+            "smokingPermitted": null,
+            "handoverPermitted": null,
+            "liveVideoTourAvailable": null,
+            "firstActivationRange": null,
+            "priceRangeWithType": {
+                "type": "RENT_PER_TIME",
+                "range": {
+                    "min": null,
+                    "max": 1000
+                }
+            },
+            "virtualTourType": null,
+            "yearOfConstructionRange": null,
+            "numberOfParkingSpacesRange": null,
+            "numberOfSeatsRange": null,
+            "numberOfBedsRange": null,
+            "floorRange": null,
+            "priceMultiplierRange": null,
+            "netAreaRange": {
+                "min": 65,
+                "max": null
+            },
+            "numberOfRoomsRange": {
+                "min": 2,
+                "max": null
+            },
+            "netRentRange": null,
+            "lotSizeRange": null,
+            "totalAreaRange": null,
+            "siteAreaRange": null,
+            "pricePerSqm": null,
+            "priceRange": null,
+            "totalRentRange": null,
+            "marketValueRange": null,
+            "monthlyRateRange": null,
+            "onlyShortTermBuildable": false,
+            "onlyBuildingProject": false,
+            "onlyNewBuildingOrBuildingProject": false,
+            "onlyWithBalcony": false,
+            "onlyWithInternet": false,
+            "onlyWithGarden": false,
+            "onlyWithElevator": false,
+            "onlyWithParking": false,
+            "onlyWithBarrierFree": false,
+            "onlyWithGuestToilet": false,
+            "onlyWithBasement": false,
+            "onlyWithLodgerFlat": false,
+            "onlyWithAvailableHighVoltageCurrent": false,
+            "onlyWithAmbulantNursingService": false,
+            "onlySecondAuctions": false,
+            "onlySplittingAuctions": false,
+            "onlyWithCareOfAlzheimerDiseasePatients": false,
+            "onlyWithCareOfArtificalRespirationPatients": false,
+            "onlyWithCareOfDementiaPatients": false,
+            "onlyWithCareOfMultipleSclerosisPatients": false,
+            "onlyWithCareOfParkinsonsDiseasePatients": false,
+            "onlyWithCareOfStrokePatients": false,
+            "onlyWithCareOfVegetativeStatePatients": false,
+            "onlyWithCooker": false,
+            "onlyWithCookingPossibility": false,
+            "onlyWithCraneRails": false,
+            "onlyWithDishWasher": false,
+            "onlyWithFridge": false,
+            "onlyWithHoist": false,
+            "onlyWithLiftingPlatform": false,
+            "onlyWithOven": false,
+            "onlyWithOwnFurnishingPossible": false,
+            "onlyWithRamp": false,
+            "onlyWithWashingMachine": false,
+            "onlyWithoutCourtage": false,
+            "onlyWithAirConditioning": false,
+            "onlyWithItInfrastructure": false,
+            "onlyWithKitchen": false,
+            "onlyWithPlanningPermission": false,
+            "onlyFlatShareSuitable": false,
+            "onlyWithShowcaseOrPremium": false,
+            "onlyNewHomeBuilder": false,
+            "onlyPaywallAndListFirstListings": false,
+            "realEstateIds": [],
+            "neighbourhoodIds": [],
+            "shapeInformations": [],
+            "apartmentTypes": [],
+            "houseTypes": [],
+            "houseTypeTypes": [],
+            "officeTypes": [],
+            "tradeSiteUtilizations": [],
+            "gastronomyTypes": [],
+            "storeTypes": [],
+            "specialPurposePropertyTypes": [],
+            "investObjectTypes": [],
+            "industryTypes": [],
+            "garageTypes": [],
+            "careTypes": [],
+            "auctionObjectTypes": [],
+            "siteDevelopmentTypes": [],
+            "siteConstructibleTypes": [],
+            "constructionPhaseTypes": [],
+            "seniorCareLevels": [],
+            "roomTypes": [],
+            "heatingTypes": [],
+            "locationClassifications": [],
+            "officeRentDurations": [],
+            "energyEfficiencyClasses": [],
+            "petsAllowedTypes": [],
+            "exclusionCriteria": [
+                "SWAP_FLAT"
+            ],
+            "verifiedBy": [],
+            "buildingProjectId": null,
+            "shape": "igk_IsiqpAptB_Fzv@ujDnFaqAjLckAgRydApFgo@i@w_@aMkgAyk@_z@iNbAqi@bReNtA}~@anBpBef@iO}q@gc@cWwLQ_NfJmYlvAgRrVij@ra@qi@~~AfCpw@rBdoAnDlmCnPtqCrc@p\\tZha@h_@xh@",
+            "clipShape": null,
+            "centerOfSearchWgs84Coordinate": null,
+            "airportDistance": null,
+            "supermarketDistance": null,
+            "publicTransportDistance": null,
+            "motorwayLinkDistance": null,
+            "longDistanceTransportDistance": null,
+            "schoolDistance": null,
+            "bakeryDistance": null,
+            "drugstoreDistance": null,
+            "generalPractitionerDistance": null,
+            "playgroundDistance": null,
+            "restaurantDistance": null,
+            "waterObjectDistance": null,
+            "parkDistance": null,
+            "crossTypeSearch": false,
+            "vicinitySearch": false,
+            "travelTimeSearch": false,
+            "shapeSearch": true,
+            "geoHierarchySearch": false,
+            "premiumDeveloperProject": false
+        },
+        "nonQueryData": {
+            "locationName": "gezeichnetes Suchgebiet in Berlin Kreuzberg",
+            "gacLevel": "",
+            "otpEnabled": true,
+            "sortingOption": {
+                "description": "Standardsortierung",
+                "code": 0
+            },
+            "shapes": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    13.3649,
+                                    52.49157
+                                ],
+                                [
+                                    13.36602,
+                                    52.47276
+                                ],
+                                [
+                                    13.39349,
+                                    52.46382
+                                ],
+                                [
+                                    13.40662,
+                                    52.46262
+                                ],
+                                [
+                                    13.4188,
+                                    52.46048
+                                ],
+                                [
+                                    13.42997,
+                                    52.46356
+                                ],
+                                [
+                                    13.43769,
+                                    52.46235
+                                ],
+                                [
+                                    13.44293,
+                                    52.46256
+                                ],
+                                [
+                                    13.45451,
+                                    52.46481
+                                ],
+                                [
+                                    13.46395,
+                                    52.47198
+                                ],
+                                [
+                                    13.46361,
+                                    52.47443
+                                ],
+                                [
+                                    13.46055,
+                                    52.48124
+                                ],
+                                [
+                                    13.46012,
+                                    52.48367
+                                ],
+                                [
+                                    13.47789,
+                                    52.4939
+                                ],
+                                [
+                                    13.48416,
+                                    52.49333
+                                ],
+                                [
+                                    13.49231,
+                                    52.49594
+                                ],
+                                [
+                                    13.49617,
+                                    52.50174
+                                ],
+                                [
+                                    13.49626,
+                                    52.50394
+                                ],
+                                [
+                                    13.49446,
+                                    52.50634
+                                ],
+                                [
+                                    13.48047,
+                                    52.51057
+                                ],
+                                [
+                                    13.47669,
+                                    52.51365
+                                ],
+                                [
+                                    13.47115,
+                                    52.52058
+                                ],
+                                [
+                                    13.45579,
+                                    52.52739
+                                ],
+                                [
+                                    13.44674,
+                                    52.52671
+                                ],
+                                [
+                                    13.43391,
+                                    52.52613
+                                ],
+                                [
+                                    13.41112,
+                                    52.52525
+                                ],
+                                [
+                                    13.38765,
+                                    52.52245
+                                ],
+                                [
+                                    13.38292,
+                                    52.51659
+                                ],
+                                [
+                                    13.37743,
+                                    52.51216
+                                ],
+                                [
+                                    13.37074,
+                                    52.50699
+                                ],
+                                [
+                                    13.3649,
+                                    52.49157
+                                ]
+                            ]
+                        ]
+                    },
+                    "properties": {
+                        "id": "B0B2ED880B3437068EA97DB8007DE1C5",
+                        "type": "drawn"
+                    }
+                }
+            ],
+            "geoPaths": {},
+            "international": false,
+            "commercial": false,
+            "rerenderAutocompleteField": false
+        }
+    },
+    "resultListModel": {
+        "searchResponseModel": {
+            "additional": {
+                "lastSearchApiUrl": "/shape?realestatetype=apartmentrent&shape=igk_IsiqpAptB_Fzv@ujDnFaqAjLckAgRydApFgo@i@w_@aMkgAyk@_z@iNbAqi@bReNtA%7D~@anBpBef@iO%7Dq@gc@cWwLQ_NfJmYlvAgRrVij@ra@qi@~~AfCpw@rBdoAnDlmCnPtqCrc@p%5CtZha@h_@xh@&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pagesize=20&pricetype=rentpermonth&pagenumber=1",
+                "title": "Wohnung mieten im gezeichneten Suchgebiet in Berlin Kreuzberg - ImmoScout24",
+                "sortingOptions": [
+                    {
+                        "description": "Standardsortierung",
+                        "code": 0
+                    },
+                    {
+                        "description": "Kaltmiete (höchste zuerst)",
+                        "code": 3
+                    },
+                    {
+                        "description": "Kaltmiete (niedrigste zuerst)",
+                        "code": 4
+                    },
+                    {
+                        "description": "Zimmeranzahl (höchste zuerst)",
+                        "code": 5
+                    },
+                    {
+                        "description": "Zimmeranzahl (niedrigste zuerst)",
+                        "code": 6
+                    },
+                    {
+                        "description": "Wohnfläche (größte zuerst)",
+                        "code": 7
+                    },
+                    {
+                        "description": "Wohnfläche (kleinste zuerst)",
+                        "code": 8
+                    },
+                    {
+                        "description": "Aktualität (neueste zuerst)",
+                        "code": 2
+                    }
+                ],
+                "pagerTemplate": "|Suche|shape|wohnung-mieten?shape=aWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pricetype=rentpermonth&pagenumber=%page%",
+                "sortingTemplate": "|Suche|shape|wohnung-mieten?shape=aWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pricetype=rentpermonth&sorting=%sorting%",
+                "world": "LIVING",
+                "international": false,
+                "device": {
+                    "deviceType": "NORMAL",
+                    "devicePlatform": "UNKNOWN",
+                    "mobile": false,
+                    "tablet": false,
+                    "normal": true
+                },
+                "commercial": false,
+                "saveSearchLink": "/Suche/controller/saveSearch.go?reportLabelSaveSearchLocation=textlink&searchUrl=/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth&returnUrl=/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth&source=savedsearch",
+                "propertyBookLinks": null,
+                "resultlistShortDescription": "Mietwohnung im gezeichneten Suchgebiet in Berlin Kreuzberg",
+                "saveable": true,
+                "landingPageLayout": false,
+                "regionCmsContentUrl": "/content/is24resultlist/shape/wohnung-mieten/_jcr_content/info.html",
+                "faqCmsContentUrl": "/content/is24resultlist/shape/wohnung-mieten/_jcr_content/faq.html",
+                "introCmsContentUrl": "/content/is24resultlist/shape/wohnung-mieten/_jcr_content/intro.html",
+                "seoLinks": null,
+                "saveSearchBottomLink": "/Suche/controller/saveSearch.go?reportLabelSaveSearchLocation=box_footer&searchUrl=/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth&returnUrl=/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth&source=savedsearch",
+                "showProvisionsfrei": false,
+                "footerData": "pro-sea-5fdb685485-llbw9 - v5967",
+                "realEstateTypes": [
+                    "APARTMENT_RENT"
+                ],
+                "realEstateTypesForMap": [
+                    "FLAT_SHARE_ROOM",
+                    "LIVING_RENT_SITE",
+                    "SENIOR_CARE",
+                    "ASSISTED_LIVING",
+                    "INVESTMENT",
+                    "LIVING_BUY_SITE",
+                    "SHORT_TERM_ACCOMMODATION",
+                    "GARAGE_BUY",
+                    "GARAGE_RENT",
+                    "APARTMENT_RENT",
+                    "HOUSE_RENT",
+                    "HOUSE_BUY",
+                    "APARTMENT_BUY",
+                    "COMPULSORY_AUCTION"
+                ],
+                "map": {
+                    "closed": true,
+                    "shapeServerUrl": "https://geoservices.immobilienscout24.de"
+                },
+                "resultListQueryUrlTemplate": "/Suche/controller/mapResults.go?searchUrl=/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth",
+                "messages": [],
+                "version": "5967",
+                "queryModel": "{\"query\":{\"view\":\"IS24\",\"radius\":null,\"minRadius\":null,\"travelTime\":\"NONE\",\"realEstateTypes\":[\"APARTMENT_RENT\"],\"realEstateType\":\"APARTMENT_RENT\",\"furnishing\":null,\"flatShareSize\":null,\"shortTermAccommodationType\":null,\"centerOfSearchAddress\":null,\"locationSelectionType\":\"SHAPE\",\"smokingAllowed\":null,\"flatMateGender\":null,\"assistedLivingCommercializationType\":null,\"apiField1\":null,\"apiField2\":null,\"apiField3\":null,\"fullTextQuery\":null,\"companyWideCustomerId\":null,\"numberOfPersons\":null,\"ownFunds\":null,\"vendorGroup\":null,\"minimumInternetSpeed\":null,\"beginRent\":null,\"rentalPeriod\":null,\"lastModifiedAfter\":null,\"rentDurationInMonths\":null,\"wohnberechtigungsscheinNeeded\":false,\"hasRented\":null,\"trailLivingPossible\":null,\"withFurniture\":null,\"smokingPermitted\":null,\"handoverPermitted\":null,\"liveVideoTourAvailable\":null,\"firstActivationRange\":null,\"priceRangeWithType\":{\"type\":\"RENT_PER_TIME\",\"range\":{\"min\":null,\"max\":1000.0}},\"virtualTourType\":null,\"yearOfConstructionRange\":null,\"numberOfParkingSpacesRange\":null,\"numberOfSeatsRange\":null,\"numberOfBedsRange\":null,\"floorRange\":null,\"priceMultiplierRange\":null,\"netAreaRange\":{\"min\":65.0,\"max\":null},\"numberOfRoomsRange\":{\"min\":2.0,\"max\":null},\"netRentRange\":null,\"lotSizeRange\":null,\"totalAreaRange\":null,\"siteAreaRange\":null,\"pricePerSqm\":null,\"priceRange\":null,\"totalRentRange\":null,\"marketValueRange\":null,\"monthlyRateRange\":null,\"onlyShortTermBuildable\":false,\"onlyBuildingProject\":false,\"onlyNewBuildingOrBuildingProject\":false,\"onlyWithBalcony\":false,\"onlyWithInternet\":false,\"onlyWithGarden\":false,\"onlyWithElevator\":false,\"onlyWithParking\":false,\"onlyWithBarrierFree\":false,\"onlyWithGuestToilet\":false,\"onlyWithBasement\":false,\"onlyWithLodgerFlat\":false,\"onlyWithAvailableHighVoltageCurrent\":false,\"onlyWithAmbulantNursingService\":false,\"onlySecondAuctions\":false,\"onlySplittingAuctions\":false,\"onlyWithCareOfAlzheimerDiseasePatients\":false,\"onlyWithCareOfArtificalRespirationPatients\":false,\"onlyWithCareOfDementiaPatients\":false,\"onlyWithCareOfMultipleSclerosisPatients\":false,\"onlyWithCareOfParkinsonsDiseasePatients\":false,\"onlyWithCareOfStrokePatients\":false,\"onlyWithCareOfVegetativeStatePatients\":false,\"onlyWithCooker\":false,\"onlyWithCookingPossibility\":false,\"onlyWithCraneRails\":false,\"onlyWithDishWasher\":false,\"onlyWithFridge\":false,\"onlyWithHoist\":false,\"onlyWithLiftingPlatform\":false,\"onlyWithOven\":false,\"onlyWithOwnFurnishingPossible\":false,\"onlyWithRamp\":false,\"onlyWithWashingMachine\":false,\"onlyWithoutCourtage\":false,\"onlyWithAirConditioning\":false,\"onlyWithItInfrastructure\":false,\"onlyWithKitchen\":false,\"onlyWithPlanningPermission\":false,\"onlyFlatShareSuitable\":false,\"onlyWithShowcaseOrPremium\":false,\"onlyNewHomeBuilder\":false,\"onlyPaywallAndListFirstListings\":false,\"realEstateIds\":[],\"neighbourhoodIds\":[],\"shapeInformations\":[],\"apartmentTypes\":[],\"houseTypes\":[],\"houseTypeTypes\":[],\"officeTypes\":[],\"tradeSiteUtilizations\":[],\"gastronomyTypes\":[],\"storeTypes\":[],\"specialPurposePropertyTypes\":[],\"investObjectTypes\":[],\"industryTypes\":[],\"garageTypes\":[],\"careTypes\":[],\"auctionObjectTypes\":[],\"siteDevelopmentTypes\":[],\"siteConstructibleTypes\":[],\"constructionPhaseTypes\":[],\"seniorCareLevels\":[],\"roomTypes\":[],\"heatingTypes\":[],\"locationClassifications\":[],\"officeRentDurations\":[],\"energyEfficiencyClasses\":[],\"petsAllowedTypes\":[],\"exclusionCriteria\":[\"SWAP_FLAT\"],\"verifiedBy\":[],\"buildingProjectId\":null,\"shape\":\"igk_IsiqpAptB_Fzv@ujDnFaqAjLckAgRydApFgo@i@w_@aMkgAyk@_z@iNbAqi@bReNtA}~@anBpBef@iO}q@gc@cWwLQ_NfJmYlvAgRrVij@ra@qi@~~AfCpw@rBdoAnDlmCnPtqCrc@p\\\\tZha@h_@xh@\",\"clipShape\":null,\"centerOfSearchWgs84Coordinate\":null,\"airportDistance\":null,\"supermarketDistance\":null,\"publicTransportDistance\":null,\"motorwayLinkDistance\":null,\"longDistanceTransportDistance\":null,\"schoolDistance\":null,\"bakeryDistance\":null,\"drugstoreDistance\":null,\"generalPractitionerDistance\":null,\"playgroundDistance\":null,\"restaurantDistance\":null,\"waterObjectDistance\":null,\"parkDistance\":null,\"crossTypeSearch\":false,\"vicinitySearch\":false,\"travelTimeSearch\":false,\"shapeSearch\":true,\"geoHierarchySearch\":false,\"premiumDeveloperProject\":false},\"nonQueryData\":{\"locationName\":\"gezeichnetes Suchgebiet in Berlin Kreuzberg\",\"gacLevel\":\"\",\"otpEnabled\":true,\"sortingOption\":{\"description\":\"Standardsortierung\",\"code\":0},\"shapes\":[{\"type\":\"Feature\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[13.3649,52.49157],[13.36602,52.47276],[13.39349,52.46382],[13.40662,52.46262],[13.4188,52.46048],[13.42997,52.46356],[13.43769,52.46235],[13.44293,52.46256],[13.45451,52.46481],[13.46395,52.47198],[13.46361,52.47443],[13.46055,52.48124],[13.46012,52.48367],[13.47789,52.4939],[13.48416,52.49333],[13.49231,52.49594],[13.49617,52.50174],[13.49626,52.50394],[13.49446,52.50634],[13.48047,52.51057],[13.47669,52.51365],[13.47115,52.52058],[13.45579,52.52739],[13.44674,52.52671],[13.43391,52.52613],[13.41112,52.52525],[13.38765,52.52245],[13.38292,52.51659],[13.37743,52.51216],[13.37074,52.50699],[13.3649,52.49157]]]},\"properties\":{\"id\":\"B0B2ED880B3437068EA97DB8007DE1C5\",\"type\":\"drawn\"}}],\"geoPaths\":{},\"international\":false,\"commercial\":false,\"rerenderAutocompleteField\":false}}",
+                "viewMode": "LIST",
+                "adsData": {
+                    "obj_regio1": "Berlin",
+                    "abtest": "immobilienscout24_key_group-b",
+                    "obj_yearConstructedRange": "1,2,3,4,5,6,7,8,9",
+                    "obj_noRoomsRange": "2,3,4,5",
+                    "obj_ityp": "0",
+                    "geo_land": "Deutschland",
+                    "obj_baseRentRange": "1,2,3,4,5,6,7,8,9",
+                    "obj_regio3": "Friedrichshain_Kreuzberg",
+                    "obj_livingSpaceRange": "3,4,5,6,7,8,9,10",
+                    "obj_regio2": "Berlin"
+                },
+                "featureSwitches": {
+                    "DEBUG_OVERLAPPING": false,
+                    "DISABLE_ADS": false,
+                    "DISABLE_SAVED_SEARCH_FOR_AT_SUBREGIONS": false,
+                    "REQUIRE_VALID_NONCE_TOKEN": false,
+                    "NHB_IMAGE_BOOST": true,
+                    "DISABLE_COMMERCIAL_REDIRECT": false,
+                    "DEV_MODE": false,
+                    "ENABLE_LIST_FIRST": true,
+                    "SHOW_CMS_HEADER_FOOTER": false,
+                    "TOTAL_RENT": true,
+                    "QA_ARE_FEATURE_SWITCHES_HEALTHY": false,
+                    "TRACKING_VERIFICATION": false,
+                    "SCRAPER_DETECTION_LOGGING": false,
+                    "SCHEMA_ORG_MARKUP": true,
+                    "LIST_ONLY_IS24": true,
+                    "USE_PDEV_RENT": true,
+                    "OTP_PERFORMANCE_RESULT_LIST_REPORTING": true,
+                    "SCRAPER_DETECTION_JS": true,
+                    "VERIFIED_BY": true,
+                    "SHOW_PAYWALL_FILTER": false,
+                    "MAP_LIVE": false,
+                    "PAGE_SPEED": false,
+                    "PROJECT_BOOST_SORTING": true,
+                    "ENABLE_BRANCH_BANNER": true,
+                    "HIDE_DISTANCE_FOR_HIDDEN_ADDRESSES": true,
+                    "RECO_RANDOM": false,
+                    "DISABLE_TEALIUM": false,
+                    "SSR_USE_RAPSCALLION": false,
+                    "WEBP_SUPPORT": true,
+                    "EMOTIONAL_SEARCH": true,
+                    "COLLECT_WEB_VITALS": true,
+                    "EXCLUDE_SWAP_FLATS": false,
+                    "USE_TOUCHPOINTS": true,
+                    "RECO_FOR_ALL_REAL_ESTATE_TYPES": false,
+                    "USE_TOUCHPOINTS_RENT": true,
+                    "REPORT_TO_GDPR_DATA_LAKE": true,
+                    "SERVER_SIDE_RENDERING_DISABLED": false,
+                    "ENABLE_EXCLUSION_CRITERIA": true,
+                    "SHOW_NEW_ATLAS_PRICE_DATA": false,
+                    "SPECIAL_EVENT_MAP_ICONS": false,
+                    "FAKE_DOOR_EMOTIONAL_SEARCH": true,
+                    "X_TYPE_SEARCH": false,
+                    "DUMP_SSR_TIMEOUT_DATA": false,
+                    "ABTESTWRAPPER": true,
+                    "LISTINGS_IN_LISTFIRST_SUMMARY": true
+                },
+                "abTestSwitches": {
+                    "EXPO1844": "EmotionalSearchOff",
+                    "CWC_1026": "Default",
+                    "SEA2866": "OFF",
+                    "SEA2964": "OnlyLabel"
+                },
+                "searchUrl": "/shape/wohnung-mieten?shape=aWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pricetype=rentpermonth",
+                "counterName": "is24.de.finden.wohnen.wohnung_miete.result",
+                "seoHeaderBean": {
+                    "indexByRobots": false,
+                    "canonicalUrl": null,
+                    "description": "Ein großes Angebot an Mietwohnungen im gezeichneten Suchgebiet in Berlin Kreuzberg finden Sie bei ImmoScout24. Jetzt Ihre Traum-Wohnung im gezeichneten Suchgebiet in Berlin Kreuzberg mieten.",
+                    "keywords": ""
+                },
+                "utagData": {
+                    "ga_cd_test_cxp_2": "EXPO1844=EmotionalSearchOff;CWC_1026=Default;SEA2866=OFF;SEA2964=OnlyLabel",
+                    "KVrooms": "2.0",
+                    "query_regio2": "berlin",
+                    "query_regio1": "berlin",
+                    "query_numberOfRoomsMin": "2.0",
+                    "query_numberOfRoomsAvg": "2.0",
+                    "query_livingSpaceMin": "65.0",
+                    "query_livingSpaceAvg": "65.00",
+                    "query_regio3": "friedrichshain_kreuzberg",
+                    "obj_ityp": "Wohnung_Miete",
+                    "geo_land": "deutschland",
+                    "KVimmotype": "APARTMENT_RENT",
+                    "timestamp": "07.2022",
+                    "query_realEstateType": "APARTMENT_RENT",
+                    "obj_resultlist_count": "1",
+                    "obj_crosstype": "liv_apartment_rent",
+                    "geo_bln": "berlin",
+                    "KVcourtage": "y",
+                    "geo_bg": "friedrichshain_kreuzberg",
+                    "query_courtage": "y",
+                    "ga_cd_cxp_resultview": "listview",
+                    "KVlivingspace": "65.00",
+                    "query_timestamp": "07.2022",
+                    "KVregio1": "berlin",
+                    "geo_krs": "berlin"
+                },
+                "resultListUrl": "/Suche/shape/wohnung-mieten?shape=aWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pricetype=rentpermonth",
+                "shapeSearchMode": "DRAWN",
+                "touchpointData": null,
+                "googleMapsApiKey": "AIzaSyDdzQFBEs4I22FSJmzDgCtSXWMipwqPEBQ",
+                "loggedIn": true,
+                "interlinkingLists": null,
+                "breadcrumbBean": {
+                    "links": [
+                        {
+                            "label": "Suche",
+                            "url": "/"
+                        },
+                        {
+                            "label": "Berlin",
+                            "url": "/Suche/de/berlin/wohnung-mieten"
+                        },
+                        {
+                            "label": "Berlin",
+                            "url": "/Suche/de/berlin/berlin/wohnung-mieten"
+                        },
+                        {
+                            "label": "Friedrichshain-Kreuzberg",
+                            "url": "/Suche/de/berlin/berlin/friedrichshain-kreuzberg/wohnung-mieten"
+                        }
+                    ]
+                },
+                "classicGeoCodes": "",
+                "gacCountry": "DEU",
+                "gacSupported": true,
+                "externalLinks": {
+                    "teaserKaeuferPlusBookingUrl": "/warenkorb/kaeuferplus/?returnUrl=https://www.immobilienscout24.de/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth%26pagenumber%3D0%26enteredFrom%3DBUY_MPLUS&cmp_id=10-051475&cmp_name=profile_buy_quickcheckout&cmp_position=residential_resultlist&cmp_creative=modal_listfirst",
+                    "carouselKaeuferPlusBookingUrl": "/warenkorb/kaeuferplus/?returnUrl=https://www.immobilienscout24.de/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth%26pagenumber%3D0%26enteredFrom%3DBUY_KPLUS&cmp_id=10-051474&cmp_name=profile_buy_quickcheckout&cmp_position=residential_resultlist&cmp_creative=carousel_listfirst",
+                    "mieterPlusBookingUrl": "/warenkorb/mieterplus/?returnUrl=https://www.immobilienscout24.de/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth%26pagenumber%3D0%26enteredFrom%3DBUY_MPLUS&cmp_id=10-051673&cmp_name=residential_profile&cmp_position=residential_resultlist&cmp_creative=modal_pawyall_cta",
+                    "kaeuferPlusBookingUrl": "/warenkorb/kaeuferplus/?returnUrl=https://www.immobilienscout24.de/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth%26pagenumber%3D0%26enteredFrom%3DBUY_KPLUS&cmp_id=10-051674&cmp_name=profile_buy_quickcheckout&cmp_position=residential_resultlist&cmp_creative=modal_paywall_cta",
+                    "listFirstSsoLoginUrl": "https://sso.immobilienscout24.de/sso/authenticate?appName=search&sso_return=https://www.immobilienscout24.de/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth%26pagenumber%3D0&source=modal-listfirst",
+                    "paywallSsoLoginUrl": "https://sso.immobilienscout24.de/sso/authenticate?appName=search&sso_return=https://www.immobilienscout24.de/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth%26pagenumber%3D0&source=exclusivetimelabel"
+                },
+                "emotionalSearchCriteriaApplied": false,
+                "emotionalSearchSupportedRegions": [
+                    "/de/berlin",
+                    "/de/brandenburg",
+                    "/de/nordrhein-westfalen",
+                    "/de/sachsen"
+                ],
+                "lflTeaserDescription": null,
+                "surroundingSuburbsLflTeaserDescription": null,
+                "showPlusBookingModalFor": null,
+                "landingPageDetails": null,
+                "numberOfPaywallListings": 0,
+                "listFirstListingEntitled": false,
+                "mieterPlusUser": true,
+                "emotionalSearchEnabled": false,
+                "kaeuferPlusUser": false
+            },
+            "cmsContent": {},
+            "resultlist.resultlist": {
+                "paging": {
+                    "current": "/Suche/shape/wohnung-mieten?shape=aWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pricetype=rentpermonth",
+                    "pageNumber": 1,
+                    "pageSize": 1,
+                    "numberOfPages": 1,
+                    "numberOfHits": 1,
+                    "numberOfListings": 1,
+                    "template": "|Suche|shape|wohnung-mieten?shape=aWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pricetype=rentpermonth&pagenumber=%page%"
+                },
+                "matchCountList": "",
+                "resultlistEntries": [
+                    {
+                        "@numberOfHits": "1",
+                        "@realEstateType": "0",
+                        "resultlistEntry": {
+                            "@id": "134707439",
+                            "@modification": "2022-07-01T14:57:32.374+02:00",
+                            "@creation": "2022-06-02T15:13:54.000+02:00",
+                            "@publishDate": "2022-06-02T15:13:54.000+02:00",
+                            "realEstateId": 134707439,
+                            "disabledGrouping": "false",
+                            "resultlist.realEstate": {
+                                "@xsi.type": "search:ApartmentRent",
+                                "@id": "134707439",
+                                "title": "Schönes Teilgewerbe für Selbstständige in F-hain! Frisch renoviert!",
+                                "address": {
+                                    "street": "Petersburger Str.",
+                                    "houseNumber": "40",
+                                    "postcode": "10249",
+                                    "city": "Berlin",
+                                    "quarter": "Friedrichshain (Friedrichshain)",
+                                    "wgs84Coordinate": {
+                                        "latitude": 52.52276,
+                                        "longitude": 13.44942
+                                    },
+                                    "preciseHouseNumber": "true",
+                                    "description": {
+                                        "text": "Petersburger Str. 40, Friedrichshain, Berlin"
+                                    }
+                                },
+                                "companyWideCustomerId": "001.1040708",
+                                "floorplan": "false",
+                                "streamingVideo": "false",
+                                "listingType": "S",
+                                "privateOffer": "false",
+                                "contactDetails": {
+                                    "salutation": "NO_SALUTATION",
+                                    "firstname": "Dominik",
+                                    "lastname": "Mau ",
+                                    "company": "Imoplan GmbH"
+                                },
+                                "realtorCompanyName": "Imoplan GmbH",
+                                "galleryAttachments": {
+                                    "attachment": [
+                                        {
+                                            "@xsi.type": "common:Picture",
+                                            "floorplan": "false",
+                                            "titlePicture": "false",
+                                            "urls": [
+                                                {
+                                                    "url": {
+                                                        "@scale": "SCALE_AND_CROP",
+                                                        "@href": "https://pictures.immobilienscout24.de/listings/dfe2a553-ed77-4fb1-b91b-b6081f9afdd6-1539149769.jpg/ORIG/legacy_thumbnail/%WIDTH%x%HEIGHT%/format/webp/quality/50"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@xsi.type": "common:Picture",
+                                            "floorplan": "false",
+                                            "titlePicture": "false",
+                                            "urls": [
+                                                {
+                                                    "url": {
+                                                        "@scale": "SCALE_AND_CROP",
+                                                        "@href": "https://pictures.immobilienscout24.de/listings/c12713b7-f12c-4732-9ee5-d12c1e5a5760-1539149770.jpg/ORIG/legacy_thumbnail/%WIDTH%x%HEIGHT%/format/webp/quality/50"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@xsi.type": "common:Picture",
+                                            "floorplan": "false",
+                                            "titlePicture": "false",
+                                            "urls": [
+                                                {
+                                                    "url": {
+                                                        "@scale": "SCALE_AND_CROP",
+                                                        "@href": "https://pictures.immobilienscout24.de/listings/8df73034-90ea-41f4-a03a-5c12727c93b0-1539149771.jpg/ORIG/legacy_thumbnail/%WIDTH%x%HEIGHT%/format/webp/quality/50"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@xsi.type": "common:Picture",
+                                            "floorplan": "false",
+                                            "titlePicture": "false",
+                                            "urls": [
+                                                {
+                                                    "url": {
+                                                        "@scale": "SCALE_AND_CROP",
+                                                        "@href": "https://pictures.immobilienscout24.de/listings/a87ab68f-c40b-4afe-ad39-d42cd6b751eb-1539149773.jpg/ORIG/legacy_thumbnail/%WIDTH%x%HEIGHT%/format/webp/quality/50"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@xsi.type": "common:Picture",
+                                            "floorplan": "false",
+                                            "titlePicture": "false",
+                                            "urls": [
+                                                {
+                                                    "url": {
+                                                        "@scale": "SCALE_AND_CROP",
+                                                        "@href": "https://pictures.immobilienscout24.de/listings/429b7f73-c755-44f6-b403-3f20613154d7-1539149775.jpg/ORIG/legacy_thumbnail/%WIDTH%x%HEIGHT%/format/webp/quality/50"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@xsi.type": "common:Picture",
+                                            "floorplan": "false",
+                                            "titlePicture": "false",
+                                            "urls": [
+                                                {
+                                                    "url": {
+                                                        "@scale": "SCALE_AND_CROP",
+                                                        "@href": "https://pictures.immobilienscout24.de/listings/45b831fa-8b30-4826-aa05-e1974beadae9-1539149776.jpg/ORIG/legacy_thumbnail/%WIDTH%x%HEIGHT%/format/webp/quality/50"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@xsi.type": "common:Picture",
+                                            "floorplan": "false",
+                                            "titlePicture": "false",
+                                            "urls": [
+                                                {
+                                                    "url": {
+                                                        "@scale": "SCALE_AND_CROP",
+                                                        "@href": "https://pictures.immobilienscout24.de/listings/c9dc8fb8-aeeb-4e64-8f54-aa32d7f80a5b-1539149778.jpg/ORIG/legacy_thumbnail/%WIDTH%x%HEIGHT%/format/webp/quality/50"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "spotlightListing": "false",
+                                "paywallListing": {
+                                    "active": "false"
+                                },
+                                "price": {
+                                    "value": 945,
+                                    "currency": "EUR",
+                                    "marketingType": "RENT",
+                                    "priceIntervalType": "MONTH"
+                                },
+                                "livingSpace": 92,
+                                "numberOfRooms": 2,
+                                "builtInKitchen": "true",
+                                "balcony": "false",
+                                "garden": "false",
+                                "calculatedTotalRent": {
+                                    "totalRent": {
+                                        "value": 1070,
+                                        "currency": "EUR",
+                                        "marketingType": "RENT",
+                                        "priceIntervalType": "MONTH"
+                                    },
+                                    "calculationMode": "SUMMARIZED"
+                                }
+                            },
+                            "attributes": [
+                                {
+                                    "attribute": [
+                                        {
+                                            "label": "Kaltmiete",
+                                            "value": "945 €"
+                                        },
+                                        {
+                                            "label": "Wohnfläche",
+                                            "value": "92 m²"
+                                        },
+                                        {
+                                            "label": "Zimmer",
+                                            "value": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "realEstateTags": {
+                                "tag": [
+                                    "Einbauküche",
+                                    "Keller"
+                                ]
+                            },
+                            "hasNewFlag": "false"
+                        },
+                        "shapes": [
+                            {
+                                "geoJson": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[13.3649,52.49157],[13.36602,52.47276],[13.39349,52.46382],[13.40662,52.46262],[13.4188,52.46048],[13.42997,52.46356],[13.43769,52.46235],[13.44293,52.46256],[13.45451,52.46481],[13.46395,52.47198],[13.46361,52.47443],[13.46055,52.48124],[13.46012,52.48367],[13.47789,52.4939],[13.48416,52.49333],[13.49231,52.49594],[13.49617,52.50174],[13.49626,52.50394],[13.49446,52.50634],[13.48047,52.51057],[13.47669,52.51365],[13.47115,52.52058],[13.45579,52.52739],[13.44674,52.52671],[13.43391,52.52613],[13.41112,52.52525],[13.38765,52.52245],[13.38292,52.51659],[13.37743,52.51216],[13.37074,52.50699],[13.3649,52.49157]]]},\"properties\":{\"id\":\"B0B2ED880B3437068EA97DB8007DE1C5\",\"type\":\"drawn\"}}"
+                            }
+                        ]
+                    }
+                ],
+                "description": {
+                    "text": "Mietwohnung, ab 2 Zimmer, ab 65 m² Wohnfläche, bis 1.000 € Kaltmiete, gezeichnetes Suchgebiet in Berlin Kreuzberg, Wohnberechtigungsschein nicht erforderlich, inkl. Neubauprojekten"
+                }
+            }
+        }
+    },
+    "model": "{}",
+    "isUserLoggedIn": true,
+    "nonceToken": "ee9d4f111ed6baf3119e7c4d4519b25b0d0ce9b2582d7d34",
+    "resultListQueryUrlTemplate": "/Suche/controller/mapResults.go?searchUrl=/Suche/shape/wohnung-mieten?shape%3DaWdrX0lzaXFwQXB0Ql9GenZAdWpEbkZhcUFqTGNrQWdSeWRBcEZnb0BpQHdfQGFNa2dBeWtAX3pAaU5iQXFpQGJSZU50QX1_QGFuQnBCZWZAaU99cUBnY0BjV3dMUV9OZkptWWx2QWdSclZpakByYUBxaUB_fkFmQ3B3QHJCZG9BbkRsbUNuUHRxQ3JjQHBcdFpoYUBoX0B4aEA.%26haspromotion%3Dfalse%26numberofrooms%3D2.0-%26price%3D-1000.0%26livingspace%3D65.0-%26exclusioncriteria%3Dswapflat%26pricetype%3Drentpermonth",
+    "lastSearchApiUrl": "/shape?realestatetype=apartmentrent&shape=igk_IsiqpAptB_Fzv@ujDnFaqAjLckAgRydApFgo@i@w_@aMkgAyk@_z@iNbAqi@bReNtA%7D~@anBpBef@iO%7Dq@gc@cWwLQ_NfJmYlvAgRrVij@ra@qi@~~AfCpw@rBdoAnDlmCnPtqCrc@p%5CtZha@h_@xh@&haspromotion=false&numberofrooms=2.0-&price=-1000.0&livingspace=65.0-&exclusioncriteria=swapflat&pagesize=20&pricetype=rentpermonth&pagenumber=1",
+    "react": {
+        "renderingDone": true
+    },
+    "disableSearchNavigationOnExpose": false,
+    "reactApp": {
+        "BillboardStore": {}
+    }
+}
