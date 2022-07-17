@@ -9,7 +9,7 @@ RUN export PATH=$PATH:/usr/lib/chromium-browser/
 RUN pip install --no-cache-dir -r requirements.txt
 
 RUN mkdir ./config
-COPY --chown=flathunter:flathunter ./config.yaml /app/config/config.yaml
+COPY --chown=flathunter:flathunter ./config.yaml.dist /app/config/config.yaml
 
 RUN mkdir database && chown flathunter:flathunter -R database
 VOLUME /app/database
