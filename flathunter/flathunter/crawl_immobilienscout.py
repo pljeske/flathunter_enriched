@@ -131,12 +131,14 @@ class CrawlImmobilienscout(Crawler):
 
         try:
             image_urls = []
+
             for attachment in entry['galleryAttachments']['attachment']:
                 full_url = attachment['urls'][0]['url']['@href']
                 image_urls.append(full_url.split("/ORIG")[0])
             expose['images'] = image_urls
         except Exception as e:
             self.__log__.warning("Unable to find image urls: ", e)
+            expose['images'] = []
 
         self.driver.get(expose['url'])
         try:
