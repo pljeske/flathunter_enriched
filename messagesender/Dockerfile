@@ -10,6 +10,7 @@ FROM python:3.8-slim
 
 COPY --from=builder /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
+ENV PYTHONUNBUFFERED="definitely"
 
 # Create and switch to a new user
 RUN useradd --create-home flathunter
