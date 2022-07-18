@@ -80,7 +80,7 @@ class SenderTelegram(Processor):
             return
         for chat_id in self.receiver_ids:
             if new_listing:
-                message = f"------------NEW LISTING------------\n{message}"
+                self.send(self.send_msg_url, {'chat_id': chat_id, 'text': '------------NEW LISTING------------'})
 
             max_length = 4095
             if len(message) > max_length:
