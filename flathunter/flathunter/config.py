@@ -115,6 +115,11 @@ class Config:
             return self.config["rabbitmq"]["port"]
         return 5672
 
+    def get_rabbitmq_url(self) -> str:
+        if "rabbitmq" in self.config and "url" in self.config["rabbitmq"]:
+            return self.config["rabbitmq"]["url"]
+        return "amqp://rabbitmq:rabbitmq@localhost:5672/"
+
 
     def use_proxy(self):
         """Check if proxy is configured"""

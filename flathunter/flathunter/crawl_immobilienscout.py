@@ -2,9 +2,13 @@
 import logging
 import re
 import datetime
+import time
 
+import requests
+from bs4 import BeautifulSoup
 from selenium.common.exceptions import JavascriptException
 from jsonpath_ng import parse
+from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 
 from flathunter.abstract_crawler import Crawler
@@ -89,6 +93,31 @@ class CrawlImmobilienscout(Crawler):
             entries.extend(cur_entry)
         return entries
 
+    def get_soup_from_url(self, url, driver=None, checkbox=None, afterlogin_string=None):
+        """Creates a Soup object from the HTML at the provided URL"""
+
+        self.rotate_user_agent()
+        resp = requests.get(url, headers=self.HEADERS)
+        if resp.status_code not in (200, 405):
+            self.__log__.error("Got response (%i): %s", resp.status_code, resp.content)
+        if self.config.use_proxy():
+            return self.get_soup_with_proxy(url)
+        if driver is not None:
+            driver.get(url)
+            if re.search("initGeetest", driver.page_source):
+                self.resolve_geetest(driver)
+            elif re.search("g-recaptcha", driver.page_source):
+                self.resolve_recaptcha(driver, checkbox, afterlogin_string)
+            result_json = driver.execute_script('return window.IS24.resultList;')
+            if not result_json["isUserLoggedIn"]:
+                self.__log__.info("User is not logged in. Trying to login...")
+                self.login(driver)
+                return self.get_soup_from_url(url, driver, checkbox, afterlogin_string)
+            else:
+                self.__log__.info("User is logged in. Continuing...")
+            return BeautifulSoup(driver.page_source, 'html.parser')
+        return BeautifulSoup(resp.content, 'html.parser')
+
     def get_entries_from_javascript(self):
         """Get entries from JavaScript"""
         try:
@@ -105,8 +134,11 @@ class CrawlImmobilienscout(Crawler):
           self.extract_entry_from_javascript(entry.value) for entry in jsonpath_expr.find(json)
         ]
 
-    def extract_entry_from_javascript(self, entry):
+    def extract_entry_from_javascript(self, entry: dict):
         """Get single entry from JavaScript"""
+        is_premium = False
+        if entry.get("paywallListing", {}) and entry["paywallListing"].get("isPremium"):
+            is_premium = True
         image_path = parse("$..galleryAttachments..['@xlink.href']")
         expose = {
             'id': int(entry["@id"]),
@@ -121,7 +153,8 @@ class CrawlImmobilienscout(Crawler):
             'crawler': self.get_name(),
             'price': str(entry["price"]["value"]),
             'size': str(entry["livingSpace"]),
-            'rooms': str(entry["numberOfRooms"])
+            'rooms': str(entry["numberOfRooms"]),
+            'is_premium': is_premium
         }
 
         try:
@@ -249,3 +282,16 @@ class CrawlImmobilienscout(Crawler):
 
         self.__log__.debug('extracted: %d', len(entries))
         return entries
+
+    def login(self, driver: WebDriver):
+        """Logs in to the website"""
+        self.__log__.info("Logging in to immobilienscout24.de")
+        current_url = driver.current_url
+        driver.get("https://www.immobilienscout24.de/geschlossenerbereich/start.html?source=meinkontodropdown-login")
+        driver.find_element(By.ID, "username").send_keys(self.config.get("immoscout", {}).get("user"))
+        driver.execute_script("document.getElementById('submit').click()")
+        driver.find_element(By.ID, "password").send_keys(self.config.get("immoscout", {}).get("password"))
+        driver.execute_script("document.getElementById('loginOrRegistration').click()")
+        time.sleep(5)
+        driver.get(current_url)
+        self.__log__.info("Logged in to immobilienscout24.de")

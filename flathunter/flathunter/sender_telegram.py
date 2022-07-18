@@ -32,14 +32,12 @@ class SenderTelegram(Processor):
             connected = False
             while not connected:
                 try:
-                    credentials = pika.PlainCredentials(self.config.get_rabbitmq_user(),
-                                                        self.config.get_rabbitmq_password())
-                    pika_params = pika.ConnectionParameters(host=self.config.get_rabbitmq_host(),
-                                                            port=self.config.get_rabbitmq_port(),
-                                                            credentials=credentials)
-                    connection = pika.BlockingConnection(pika_params)
+                    params = pika.URLParameters(self.config.get_rabbitmq_url())
+                    self.__log__.debug("Connecting to RabbitMQ on url %s", self.config.get_rabbitmq_url())
+                    connection = pika.BlockingConnection(params)
                     self.channel = connection.channel()
                     connected = True
+                    self.__log__.info("Connected to RabbitMQ")
                 except Exception as e:
                     self.__log__.error("Error connecting to RabbitMQ: %s", e)
                     time.sleep(1)
@@ -61,7 +59,7 @@ class SenderTelegram(Processor):
             url=expose['url'],
             address=expose['address'],
             durations="" if 'durations' not in expose else expose['durations']).strip()
-        self.send_msg(message)
+        self.send_msg(message, is_premium=expose['is_premium'])
 
         image_urls = expose['images']
         if image_urls is not None and len(image_urls) > 0:
@@ -74,13 +72,16 @@ class SenderTelegram(Processor):
 
         return expose
 
-    def send_msg(self, message: str, new_listing=True):
+    def send_msg(self, message: str, new_listing=True, is_premium=False):
         """Send messages to each of the receivers in receiver_ids"""
         if self.receiver_ids is None:
             return
         for chat_id in self.receiver_ids:
             if new_listing:
-                self.send(self.send_msg_url, {'chat_id': chat_id, 'text': '------------NEW LISTING------------'})
+                if is_premium:
+                    self.send(self.send_msg_url, {'chat_id': chat_id, 'text': '----------MieterPlus LISTING----------'})
+                else:
+                    self.send(self.send_msg_url, {'chat_id': chat_id, 'text': '------------NEW LISTING------------'})
 
             max_length = 4095
             if len(message) > max_length:
