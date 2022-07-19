@@ -9,9 +9,10 @@ import yaml
 from pika.adapters.blocking_connection import BlockingChannel
 
 # logging.basicConfig(level=logging.NOTSET)
+logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s')
 log = logging.getLogger('rabbit_receiver')
 log.setLevel(logging.DEBUG)
-logging.basicConfig()
+
 
 
 def callback(ch: BlockingChannel, method, properties, body):
