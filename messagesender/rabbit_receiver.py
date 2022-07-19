@@ -80,7 +80,7 @@ if __name__ == '__main__':
         host = config['rabbitmq']['host']
     log.debug("Connecting to RabbitMQ on %s", host)
     wait_for_rabbitmq(host, 5672)
-    params = pika.URLParameters(url)
+    params = pika.URLParameters(url + "?heartbeat=180")
     log.debug("Connecting to RabbitMQ on url %s", url)
     connection = pika.BlockingConnection(params)
     channel = connection.channel()
