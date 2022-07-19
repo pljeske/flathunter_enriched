@@ -21,7 +21,7 @@ def callback(ch: BlockingChannel, method, properties, body):
         log.debug("Received message: %s", message)
         # print(f"Got message: {message}")
     except json.decoder.JSONDecodeError:
-        log.debug("Invalid JSON message received: %s", body)
+        log.error("Invalid JSON message received: %s", body)
         return
     params = message['params']
     url = message['url']
@@ -31,11 +31,19 @@ def callback(ch: BlockingChannel, method, properties, body):
     log.debug("Got response (%i): %s", resp.status_code, resp.content)
 
     if resp.status_code == 429:
-        # json_resp = json.loads(resp.json())
-        json_resp = resp.json()
+        try:
+            json_resp = json.loads(resp.content)
+        except json.decoder.JSONDecodeError as e:
+            log.error("Invalid JSON response received: %s", resp.content)
+            json_resp = resp.json()
+        log.warning("Got 429 response: %s", json_resp)
         ch.basic_nack(delivery_tag=method.delivery_tag)
-        retry_after = json_resp.get("parameters", {"retry-after": 60}).get("retry-after") + 2
-        log.warning("Got 429 response. Retrying in %i seconds", retry_after)
+        try:
+            retry_after = json_resp['parameters']['retry_after']
+        except Exception as e:
+            log.error(str(e))
+            retry_after = 60
+        log.warning("Retrying in %i seconds", retry_after)
         time.sleep(retry_after)
     elif resp.status_code != 200:
         log.warning("Got non-200 response: %i. Sleeping for 10 seconds", resp.status_code)
