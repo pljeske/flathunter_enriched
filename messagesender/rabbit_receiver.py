@@ -14,7 +14,6 @@ log = logging.getLogger('rabbit_receiver')
 log.setLevel(logging.DEBUG)
 
 
-
 def callback(ch: BlockingChannel, method, properties, body):
     log.debug("Received message: %s", body)
     try:
@@ -23,9 +22,19 @@ def callback(ch: BlockingChannel, method, properties, body):
         # print(f"Got message: {message}")
     except json.decoder.JSONDecodeError:
         log.error("Invalid JSON message received: %s", body)
+        log.error("Rejecting message...")
+        ch.basic_reject(delivery_tag=method.delivery_tag, requeue=False)
+        time.sleep(1.5)
         return
+
     params = message['params']
     url = message['url']
+
+    if params['text'] == '':
+        log.error("Can't send empty message Rejecting message...")
+        ch.basic_reject(delivery_tag=method.delivery_tag, requeue=False)
+        time.sleep(1.5)
+        return
 
     log.debug("Sending received message: %s", message)
     resp = requests.post(url, params=params)
@@ -46,6 +55,11 @@ def callback(ch: BlockingChannel, method, properties, body):
             retry_after = 60
         log.warning("Retrying in %i seconds", retry_after)
         time.sleep(retry_after)
+    elif resp.status_code == 400:
+        log.error("Got 400 response: %s", resp.content)
+        log.error("Dismissing message...")
+        ch.basic_reject(delivery_tag=method.delivery_tag, requeue=False)
+        time.sleep(1.5)
     elif resp.status_code != 200:
         log.warning("Got non-200 response: %i. Sleeping for 10 seconds", resp.status_code)
         ch.basic_nack(delivery_tag=method.delivery_tag)
