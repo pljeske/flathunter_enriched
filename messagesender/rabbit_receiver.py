@@ -30,7 +30,7 @@ def callback(ch: BlockingChannel, method, properties, body):
     params = message['params']
     url = message['url']
 
-    if params['text'] == '':
+    if 'sendMessage' in url and 'text' in params and params['text'] == '':
         log.error("Can't send empty message Rejecting message...")
         ch.basic_reject(delivery_tag=method.delivery_tag, requeue=False)
         time.sleep(1.5)
