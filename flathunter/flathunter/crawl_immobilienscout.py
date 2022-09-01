@@ -108,8 +108,13 @@ class CrawlImmobilienscout(Crawler):
                 self.resolve_geetest(driver)
             elif re.search("g-recaptcha", driver.page_source):
                 self.resolve_recaptcha(driver, checkbox, afterlogin_string)
-            result_json = driver.execute_script('return window.IS24.resultList;')
-            if not result_json["isUserLoggedIn"]:
+            try:
+                result_json = driver.execute_script('return window.IS24.resultList;')
+                is_logged_id = result_json['isUserLoggedId']
+            except Exception as e:
+                self.__log__.debug("Exception occurred: %s", e)
+                is_logged_id = False
+            if not is_logged_id:
                 self.__log__.info("User is not logged in. Trying to login...")
                 self.login(driver)
                 return self.get_soup_from_url(url, driver, checkbox, afterlogin_string)
