@@ -1,6 +1,7 @@
 import json
 import logging
 import socket
+import threading
 import time
 
 import pika
@@ -35,6 +36,9 @@ def callback(ch: BlockingChannel, method, properties, body):
         ch.basic_reject(delivery_tag=method.delivery_tag, requeue=False)
         time.sleep(1.5)
         return
+
+    if 'NEW' in params['text'] and "LISTING" in params['text']:
+        threading.Thread(target=notify_home_assistant, args=("New flat found",)).start()
 
     log.debug("Sending received message: %s", message)
     resp = requests.post(url, params=params)
@@ -82,6 +86,24 @@ def wait_for_rabbitmq(host: str, port: int, timeout=3):
             log.debug("RabbitMQ not reachable: %s", e)
             log.info("Waiting for RabbitMQ to come up...")
             time.sleep(timeout)
+
+
+def notify_home_assistant(text: str):
+    log.info("Notifying Home Assistant...")
+    try:
+        home_assistant_url = "http://homeassistant:8123/api/services/tts/google_translate_say"
+        headers = {
+            "Authorization": "Bearer ABCDEFGH",
+            "content-type": "application/json",
+        }
+        data = {
+            "entity_id": "media_player.arbeitszimmer_goooglehome",
+            "message": text
+        }
+        resp = requests.post(home_assistant_url, headers=headers, data=json.dumps(data))
+        log.info(resp.text)
+    except requests.exceptions.ConnectionError:
+        log.error("Could not connect to Home Assistant")
 
 
 if __name__ == '__main__':

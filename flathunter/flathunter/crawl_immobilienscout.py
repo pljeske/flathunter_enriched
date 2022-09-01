@@ -171,8 +171,13 @@ class CrawlImmobilienscout(Crawler):
             image_urls = []
 
             for attachment in entry['galleryAttachments']['attachment']:
-                full_url = attachment['urls'][0]['url']['@href']
-                image_urls.append(full_url.split("/ORIG")[0])
+                try:
+                    full_url = attachment['urls'][0]['url']['@href']
+                    image_urls.append(full_url.split("/ORIG")[0])
+                except Exception as e:
+                    print("Unable to add image url")
+                # full_url = attachment['urls'][0]['url']['@href']
+                # image_urls.append(full_url.split("/ORIG")[0])
             expose['images'] = image_urls
         except Exception as e:
             self.__log__.warning("Unable to find image urls: ", e)
