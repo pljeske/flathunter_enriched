@@ -11,6 +11,7 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: rabbitmq
       RABBITMQ_DEFAULT_PASS: rabbitmq
+    restart: unless-stopped
     networks:
       - rabbitnetwork
 
@@ -21,6 +22,7 @@ services:
       - ./config/config.yaml:/app/config/config.yaml
       - "/etc/timezone:/etc/timezone:ro"
       - "/etc/localtime:/etc/localtime:ro"
+    restart: unless-stopped
     networks:
       - rabbitnetwork
     ports:
@@ -32,6 +34,7 @@ services:
       - ./config/config.yaml:/home/flathunter/config.yaml
       - "/etc/timezone:/etc/timezone:ro"
       - "/etc/localtime:/etc/localtime:ro"
+    restart: unless-stopped
     networks:
       - rabbitnetwork
 
