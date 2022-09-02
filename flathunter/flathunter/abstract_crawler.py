@@ -6,7 +6,7 @@ import backoff
 import requests
 import selenium
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -259,7 +259,7 @@ class Crawler:
             iframe = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(
                 (By.CSS_SELECTOR, "iframe[src^='https://www.google.com/recaptcha/api2/anchor?']")))
             return iframe
-        except NoSuchElementException:
+        except (NoSuchElementException, TimeoutException):
             print("No iframe found, therefore no chaptcha verification necessary")
             return None
 
