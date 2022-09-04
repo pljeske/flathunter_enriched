@@ -5,12 +5,11 @@ from time import sleep
 import backoff
 import requests
 import selenium
+import undetected_chromedriver as uc
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from selenium import webdriver
 from bs4 import BeautifulSoup
 from random_user_agent.user_agent import UserAgent
 from random_user_agent.params import HardwareType, Popularity
@@ -48,13 +47,13 @@ class Crawler:
         'Accept-Language': 'en-US,en;q=0.9',
     }
 
-    def configure_driver(self, driver_path, driver_arguments):
+    def configure_driver(self, driver_path, driver_arguments) -> uc.Chrome:
         """Configure ChromeDriver"""
-        chrome_options = Options()
+        chrome_options = uc.ChromeOptions()
         if driver_arguments is not None:
             for driver_argument in driver_arguments:
                 chrome_options.add_argument(driver_argument)
-        driver = webdriver.Chrome(executable_path=driver_path, options=chrome_options)
+        driver = uc.Chrome(executable_path=driver_path, options=chrome_options)
         driver.execute_cdp_cmd('Network.setBlockedURLs', {
           "urls": ["https://api.geetest.com/get.*"]
         })
