@@ -1,12 +1,13 @@
 FROM joyzoursky/python-chromedriver:3.8
 
-COPY . /app
+RUN useradd flathunter
+COPY ./requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY --chown=flathunter:flathunter . /app
 WORKDIR /app
 
-RUN useradd flathunter
 RUN export PATH=$PATH:/usr/lib/chromium-browser/
-
-RUN pip install --no-cache-dir -r requirements.txt
 
 RUN mkdir ./config
 COPY --chown=flathunter:flathunter ./config.yaml.dist /app/config/config.yaml

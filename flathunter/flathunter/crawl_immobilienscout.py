@@ -93,7 +93,7 @@ class CrawlImmobilienscout(Crawler):
             entries.extend(cur_entry)
         return entries
 
-    def get_soup_from_url(self, url, driver=None, checkbox=None, afterlogin_string=None):
+    def get_soup_from_url(self, url, driver: WebDriver = None, checkbox=None, afterlogin_string=None):
         """Creates a Soup object from the HTML at the provided URL"""
 
         self.rotate_user_agent()
@@ -108,6 +108,10 @@ class CrawlImmobilienscout(Crawler):
                 self.resolve_geetest(driver)
             elif re.search("g-recaptcha", driver.page_source):
                 self.resolve_recaptcha(driver, checkbox, afterlogin_string)
+
+            self.__log__.info("Taking screenshot")
+            driver.get_screenshot_as_file(f"screenshot{datetime.datetime.now().strftime('HH-mm')}.png")
+
 
             self.__log__.info("Login function currently broken. Continuing without login")
             # try:
@@ -196,7 +200,7 @@ class CrawlImmobilienscout(Crawler):
 
         return expose
 
-    def get_page(self, search_url, driver=None, page_no=None):
+    def get_page(self, search_url, driver: WebDriver = None, page_no=None):
         """Applies a page number to a formatted search URL and fetches the exposes at that page"""
         return self.get_soup_from_url(
             search_url.format(page_no),

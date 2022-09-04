@@ -25,7 +25,8 @@ backoff = "*"
 pytz = "*"
 beautifulsoup4 = "*"
 pika = "*"
-
+pika-stubs = "*"
+undetected-chromedriver = "*"
 [dev-packages]
 
 [requires]
