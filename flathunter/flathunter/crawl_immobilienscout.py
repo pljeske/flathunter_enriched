@@ -113,19 +113,19 @@ class CrawlImmobilienscout(Crawler):
             driver.get_screenshot_as_file(f"screenshot{datetime.datetime.now().strftime('HH-mm')}.png")
 
 
-            self.__log__.info("Login function currently broken. Continuing without login")
-            # try:
-            #     result_json = driver.execute_script('return window.IS24.resultList;')
-            #     is_logged_id = result_json['isUserLoggedId']
-            # except Exception as e:
-            #     self.__log__.debug("Exception occurred: %s", e)
-            #     is_logged_id = False
-            # if not is_logged_id:
-            #     self.__log__.info("User is not logged in. Trying to login...")
-            #     self.login(driver)
-            #     return self.get_soup_from_url(url, driver, checkbox, afterlogin_string)
-            # else:
-            #     self.__log__.info("User is logged in. Continuing...")
+            # self.__log__.info("Login function currently broken. Continuing without login")
+            try:
+                result_json = driver.execute_script('return window.IS24.resultList;')
+                is_logged_id = result_json['isUserLoggedId']
+            except Exception as e:
+                self.__log__.debug("Exception occurred: %s", e)
+                is_logged_id = False
+            if not is_logged_id:
+                self.__log__.info("User is not logged in. Trying to login...")
+                self.login(driver)
+                return self.get_soup_from_url(url, driver, checkbox, afterlogin_string)
+            else:
+                self.__log__.info("User is logged in. Continuing...")
             return BeautifulSoup(driver.page_source, 'html.parser')
         return BeautifulSoup(resp.content, 'html.parser')
 
